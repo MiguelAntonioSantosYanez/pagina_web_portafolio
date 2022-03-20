@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="archivo.php" methond="get">
+        <table border="0" align="center" cellspacing="0" width="40%">
+            <tr> 
+                <td colspan="2" bgcolor="#58FA58"> <h2 align="center">REGISTROS TRABAJADORES</H2> </td>
+            </tr>
+
+            <tr>
+                <td width="30%"> 
+                    <label for="Rut">Rut:</label>
+                </td>
+                <td>
+                    <input type="text" name="Rut" id="Rut" placeholder="sin puntos ni guiones">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Nombre">Nombre:</label> 
+                </td>
+                <td>
+                    <input type="text" name="Nombre" id="Nombre">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Apellido.P">Apellido Paterno:</label>
+                </td>
+                <td>
+                    <input type="text" name="Apellido.P" id="Apellido.P">  
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Apellido.M">Apellido Materno:</label>
+                </td>
+                <td>
+                    <input type="text" name="Apellido.M" id="Apellido.M">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label>Sexo:</label>
+                </td>
+                <td> 
+                    <input type="radio" name="M" id="M">
+                    <label for="M">Maculino</label>
+                    <input type="radio" name="F" id="F">
+                    <label for="F">Femenino</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Nivel de estudio:</p>
+                </td>
+                <td>
+                    <input type="checkbox" id="No tiene" name="No tiene" value="No tiene">
+                    <label for="No tiene">No tiene</label><br>
+                    <input type="checkbox" id="Tecnico" name="Tecnico" value="Tecnico">
+                    <label for="Tecnico">Técnico</label><br>
+                    <input type="checkbox" id="Universitario" name="Universitario" value="Universitario">
+                    <label for="Universitario">Universitario</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>  <label for="Ciudad">Ciudad de nacimiento:</label></td>
+                <td colspan="2">  <select name="Ciudad" id="Ciudad"><br><br>
+                            <option value="CM">Comayagua</option>
+                            <option   option value="TEG">Tegucigalpa</option>
+                            <option value="Paz">La Paz</option>
+                            <option value="SPS">San Pedro Sula</option>
+                            <option value="Sigua">Siguatepeque</option>
+                        </select>
+            </tr>
+
+            <tr>
+                <td><label for="curriculum">Curriculum:</label></td>
+                <td> <input type="file" name="curriculum" id="curriculum"></td>
+            </tr>
+            <tr>
+                <td><label for="foto">Foto:</label></td>
+                <td><input type="file" name="foto" id="foto"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="#58FA58" height="50" align="center"><input type="submit" value="Registrar Trabajador"></input></td>
+            </tr>
+        </table>
+    </form>                                      
+        
+</body>
+</html>
